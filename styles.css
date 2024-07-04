@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f7f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
+
+td {
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para valores de IUV */
+.iuv-cell {
+    position: relative;
+}
+
+.iuv-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Estilos para la caja de color */
+.color-cell {
+    text-align: center;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #790b0b;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Estilos para colores de IUV */
+.low-iuv .color-box {
+    background-color: #7cb342; /* Bajo */
+}
+
+.medium-iuv .color-box {
+    background-color: #ffeb3b; /* Moderado */
+}
+
+.high-iuv .color-box {
+    background-color: #e53935; /* Alto */
+}
+
+.very-high-iuv .color-box {
+    background-color: #f44336; /* Muy Alto */
+}
+
+.extreme-iuv .color-box {
+    background-color: #9c27b0; /* Extremo */
+}

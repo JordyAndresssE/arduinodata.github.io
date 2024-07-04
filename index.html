@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sensor Data</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>IUV</th>
+                    <th>Color</th>
+                    <th>Presion</th>
+                    <th>Humedad</th>
+                    <th>Temperatura</th>
+                    <th>Altitud</th>
+                    <th>Hora y Fecha</th>
+                </tr>
+            </thead>
+            <tbody id="sensor-data">
+                <!-- Los datos se insertarán aquí dinámicamente -->
+            </tbody>
+        </table>
+
+        <!-- Tabla de leyenda de Índice UV (puedes mantener esta parte si es necesario) -->
+        <table class="legend-table">
+            <thead>
+                <tr>
+                    <th>IUV</th>
+                    <th>Rango</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: #7cb342;">1-2</td>
+                    <td>Bajo</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #ffeb3b;">3-5</td>
+                    <td>Moderado</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #e53935;">6-7</td>
+                    <td>Alto</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #f44336;">8-10</td>
+                    <td>Muy Alto</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #9c27b0;">+11</td>
+                    <td>Extremo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
